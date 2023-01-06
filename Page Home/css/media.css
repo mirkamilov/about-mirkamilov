@@ -1,0 +1,220 @@
+@media (max-width: 1440px) {
+    .nav__logo {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1320px) {}
+
+@media (max-width: 1290px) {}
+
+@media (max-width: 1170px) {}
+
+@media (max-width: 1140px) {}
+
+@media (max-width: 1024px) {
+    .films__cards {
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+    .collections__card{
+        max-width: 280px;
+    }
+
+    .films__card {
+        max-width: unset;
+        width: 48%;
+    }
+
+    .collections__cards {
+        overflow-x: auto;
+        padding-bottom: 15px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .collections__card {
+        scroll-snap-align: center;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 850px) {
+    .nav__logo {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav__menu {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav__menu-line {
+        width: 100%;
+        height: 2px;
+        background: var(--primary-color);
+        position: relative;
+        transition: .4s;
+    }
+
+    .nav__menu:hover .nav__menu-line {
+        background: transparent;
+    }
+
+    .nav__menu-line::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        width: 100%;
+        height: 100%;
+        background: var(--primary-color);
+        transition: .4s;
+    }
+
+    .nav__menu-line::after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        height: 100%;
+        background: var(--primary-color);
+        transition: .4s;
+    }
+
+    .nav__menu:hover .nav__menu-line::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .nav__menu:hover .nav__menu-line::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .nav__list {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background: var(--ternary-color);
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transform: scale(0);
+        transition: .4s;
+    }
+
+    .nav__menu:hover~.nav__list {
+        transform: scale(1);
+    }
+
+    .nav {
+        padding: 15px 0;
+    }
+
+    .series__card_md {
+        grid-column: 4 span;
+        grid-row: 1 span;
+    }
+
+    .series__card_md .series__card-image {
+        object-position: 0 -120px;
+    }
+
+    .series__card_sm {
+        grid-column: 2 span;
+    }
+    
+    .header__title {
+        font-size: calc(28px + (36 + 36 * 0.7) * ((100vw - 320px) / 1920));
+    }
+}
+
+@media (max-width: 736px) {}
+
+@media (max-width: 734px) {}
+
+@media (max-width: 684px) {}
+
+@media (max-width: 667px) {
+    .premier__content {
+        background: rgba(255, 255, 255, 0.6);
+    }
+    .footer__container {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 480px) {
+    .films__card {
+        width: 100%;
+    }
+    .films__card:nth-of-type(1) .films__card-image {
+        object-position: top;
+    }
+    .series__card_sm {
+        grid-column: 4 span;
+    }
+    .premier__content-image {
+        width: 100%;
+    }
+    .series__card_md .series__card-image {
+        object-position: unset;
+    }
+    .footer__txt {
+        font-size: 14px;
+    }
+}
+@media (max-width: 430px) {
+    .nav__logo {
+        font-size: 18px;
+    }
+    
+}
+
+@media (max-width: 414px) {
+    .series__card-title {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 412px) {
+    .nav__logo {
+        font-size: 18px;
+    }
+    .films__title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 375px) {
+    .header__btns {
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+    .premier__content-txt {
+        -webkit-line-clamp: 5;
+    }
+    .nav__logo {
+        font-size: 18px;
+    }
+    .films__title {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 360px) {}
+
+@media (max-width: 320px) {}
+
+/* 192.168.8.116:9000 */
